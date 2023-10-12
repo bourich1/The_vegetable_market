@@ -273,6 +273,117 @@ header button div{
     padding: 15px 0;
 }
 
+.type-veg{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 150px;
+    
+}
+.active{
+   display: inline-block;
+   
+}
+.type-veg .content{
+    display: flex;
+    background-color: var(--emerald);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 200px;
+   height: 80px;
+    font-weight: 600;
+
+}
+.type-veg .content1{
+    display: flex;
+    background-color: var(--mint-cream);
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    width: 200px;
+   height: 80px;
+    font-weight: 600;
+}
+
+.cards-prudacts{
+    width: 100%;
+    padding:50px 0;
+    display: flex;
+    justify-content: center;
+}
+.card-prudact{
+    cursor: pointer;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px 15px;
+    margin: 15px 15px;
+    background-color: var(--mint-cream);
+    outline: 3px solid var(--mint-cream);
+}
+.card-prudact div{
+    position: absolute;
+    top: 40%;
+    
+}
+.card-prudact div .btn{
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color:  var(--emerald);
+    width: 15px;
+    height: 15px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    
+}
+.card-prudact:hover .btn{
+    opacity: 1;
+}
+.card-prudact:hover  img{
+    opacity: 0.7;
+}
+.card-prudact:hover {
+    outline: 3px solid var(--emerald);
+    background-color: rgb(241, 241, 239);
+}
+.card-prudact p{
+    font-size: 1.2rem;
+    padding-top: 20px;
+    color: rgb(48, 47, 47);
+}
+.card-prudact h5 .span2{
+    padding-left: 5px;
+    color: var(--emerald);
+    
+}
+.card-prudact h5 .span3{
+    padding-left: 5px;
+    color: rgb(56, 54, 54);
+    text-decoration: line-through;
+    
+}
+.card-prudact h5{
+    font-size: 0.8rem ;
+    font-weight: 400;
+    padding: 10px 0;
+    
+}
+
+
+.btn-min{
+    padding: 12px 24px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -318,8 +429,25 @@ header button div{
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .Products .Products-header .Products-links a .link{
+    .type-veg{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 150px;
         
+    }
+    .type-veg .active{
+        margin-bottom: 30px;
+    }
+    .cards-prudacts{
+        width: 100%;
+        padding:80px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card-prudact{
+        width: 27%;
     }
 }
 
@@ -387,10 +515,53 @@ header button div{
         
     }
     .offers .offer-all{
-        width: 60%;
+        width: 80%;
         margin-bottom: 30px;
     }
+    .type-veg{
+        flex-direction: column;
+        align-items: center;
+    }
+    .type-veg .active{
+        margin-bottom: 10px;
+    }
+    .cards-prudacts{
+        width: 100%;
+        padding:80px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-prudact{
+        width: 75%;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes bourich {
     from{
