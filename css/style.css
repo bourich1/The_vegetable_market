@@ -248,8 +248,9 @@ header button div{
     width: 100%;
     padding: 30px 0;
 }
-.Products .Products-header{
+.Products-header{
     width: 100%;
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,13 +262,13 @@ header button div{
     justify-content: space-around;
     padding: 40px 80px;
 }
-.Products .Products-header p{
+ .Products-header p{
     color: var(--emerald);
     font-size: 1.2rem;
     font-weight: 500;
     padding: 10px 0;
 }
-.Products .Products-header h3{
+ .Products-header h3{
     font-size: 2.5rem;
     font-weight: 400;
     padding: 15px 0;
@@ -358,12 +359,12 @@ header button div{
     padding-top: 20px;
     color: rgb(48, 47, 47);
 }
-.card-prudact h5 .span2{
+ .span2{
     padding-left: 5px;
     color: var(--emerald);
     
 }
-.card-prudact h5 .span3{
+ .span3{
     padding-left: 5px;
     color: rgb(56, 54, 54);
     text-decoration: line-through;
@@ -406,6 +407,86 @@ header button div{
     margin: 20px 0;
     color: rgb(58, 57, 57);
 }
+
+.prudacts-card-2{
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.card-prodact-2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 100px;
+    padding: 30px 10px;
+    background-color: var(--mint-cream);
+    overflow: hidden;
+    outline: 3px solid var(--mint-cream);
+    margin-bottom: 40px;
+}
+.card-prodact-2:hover{
+    outline: 3px solid var(--emerald);
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    margin-left:20px ;
+    padding-top: 60px;
+    transition: all 0.7s;
+}
+.btn-miin{
+    font-weight: 400;
+    color: white !important;
+    opacity: 0;
+    transition: all 0.7s;
+    
+}
+.btn-miiin{
+    width: 15px ;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--emerald);
+    cursor: pointer;
+}
+.group-miiin-btn{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.card-body .a-crd{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+    padding: 10px 0;
+}
+.card-body a:hover{
+    color: var(--emerald);
+}
+.card-prodact-2:hover .btn-miin {
+    opacity: 1;
+}
+.card-prodact-2:hover .group-miiin-btn {
+    opacity: 1;
+}
+.card-prodact-2:hover .card-body{
+    padding-top: 0px;
+}
+
+
+
+
 
 
 
@@ -473,6 +554,21 @@ header button div{
     }
     .card-prudact{
         width: 27%;
+    }
+    .prudacts-card-2{
+        width: auto;
+        padding: 50px 90px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .card-prodact-2{
+        position: relative;
+        display: flex;
+        width: 45%;
+        height: 100px;
+        padding: 30px 10px;
+        margin-bottom: 40px;
     }
 }
 
@@ -578,6 +674,11 @@ header button div{
         font-size: 1.1rem;
         margin: 20px 0;
         color: rgb(58, 57, 57);
+    }
+
+    .card-prodact-2{
+        width: 90%;
+        padding: 50px 0;
     }
 
 }
