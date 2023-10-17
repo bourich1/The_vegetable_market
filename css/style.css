@@ -484,6 +484,30 @@ header button div{
     padding-top: 0px;
 }
 
+.prenters{
+    
+    padding: 40px 0;
+    background-color: var(--emerald);
+    background-repeat: no-repeat , no-repeat;
+    background-position: left bottom ,right top ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Prenter-header p , h3{
+    color: white;
+}
+.prenter{
+    position: relative;
+    animation: prenter 5s linear infinite;
+   
+}
+
+
+
+
+
+
 
 
 
@@ -570,6 +594,18 @@ header button div{
         padding: 30px 10px;
         margin-bottom: 40px;
     }
+    .prenter{
+        display: flex;
+        overflow: hidden;
+        scroll-snap-type: mandatory;
+        width: 83%;
+        animation: none;
+    }
+    .prenter img{
+        width: 25%;
+        animation: prenter 8s linear infinite;
+    }
+    
 }
 
 
@@ -653,6 +689,9 @@ header button div{
         flex-direction: column;
         align-items: center;
     }
+    .Products-header h3{
+        font-size: 2rem;
+    }
     .card-prudact{
         width: 75%;
     }
@@ -679,6 +718,17 @@ header button div{
     .card-prodact-2{
         width: 90%;
         padding: 50px 0;
+    }
+    .prenter{
+        display: flex;
+        overflow: hidden;
+        scroll-snap-type: mandatory;
+        width: 83%;
+        animation: none;
+    }
+    .prenter img{
+        width: 25%;
+        animation: prenter 8s linear infinite;
     }
 
 }
@@ -714,6 +764,18 @@ header button div{
     }
     to{
         right: 0px;
+    }
+}
+
+@keyframes prenter {
+    0%{
+        transform: translate(100px);
+    }
+    50%{
+        transform: translate(-200px);
+    }
+    100%{
+        transform: translate(100px);
     }
 }
 /* @keyframes bourich1 {
