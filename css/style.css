@@ -237,6 +237,7 @@ header button div{
 .btn-ofer{
     padding:15px 25px;
     margin: 15px 0;
+    
 }
 
 
@@ -272,6 +273,7 @@ header button div{
     font-size: 2.5rem;
     font-weight: 400;
     padding: 15px 0;
+    color: black;
 }
 
 .type-veg{
@@ -502,12 +504,152 @@ header button div{
     animation: prenter 5s linear infinite;
    
 }
+.client-header p{
+    color: var(--emerald);
+}
+.client-header h3{
+    color: black;
+}
 
+.cards-client{
+    padding:0 90px ;
+    padding-bottom:80px ;
+    display: flex;
+    justify-content: space-around;
+    
+   
 
+}
+.header-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.card-client{
+    background-color: var(--mint-cream);
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 25px;
+}
+.card-client h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px ;
+}
+.card-client span{
+    margin-top: 20px ;
+    color: var(--emerald);
+    font-weight: 400;
+}
+.card-client p{
+    text-align: center;
+    width: 95%;
+    color: rgb(124, 122, 122);
+    line-height: 1.6rem;
+}
 
+.blog{
+    padding: 20px 0;
+    width: 100%;
+}
+.cards-blog{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.card-blog{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(233, 225, 225);
+    
+}
+.img{
+    background-color: var(--mint-cream);
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body-card{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.header-card span{
+    color: rgb(189, 185, 181);
+}
+.header-card{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0px;
+}
+.card-blog .a1{
+    text-decoration: none;
+    color: black;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.card-blog .a1:hover{
+    color: var(--emerald);
+}
 
+.Newsletter{
+    background-color: var(--eerie-black);
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 100px 0;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/partner-left-bg.png), url(../images/partner-right-bg.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right top;
 
+}
 
+.span4{
+    color: var(--emerald);
+}
+
+form{
+    width: 50%;
+    position: relative;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+form input{
+    width: 100%;
+    padding: 28px 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.btn-s{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width: auto;
+    padding: 20px 35px;
+    background-color: var(--emerald);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 
 
@@ -605,7 +747,29 @@ header button div{
         width: 25%;
         animation: prenter 8s linear infinite;
     }
-    
+    .cards-client{
+        flex-wrap: wrap;
+        padding: 0px;
+        justify-content: space-between;
+    }
+    .card-client{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .cards-blog{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 60px;
+    }
+    .card-blog{
+        width: 48%;
+        margin-bottom: 20px;
+        
+    }
+    form{
+        width: 80%;
+    }
 }
 
 
@@ -730,7 +894,39 @@ header button div{
         width: 25%;
         animation: prenter 8s linear infinite;
     }
+    .cards-client{
+        flex-wrap: wrap;
+        padding: 0px;
+        align-items: center;
+        
+    }
+    .card-client{
+        width: 80%;
+        margin-bottom: 30px;
+    }
 
+    .cards-blog{
+       flex-direction: column;
+       align-items: center;
+        margin: 0;
+    }
+    .card-blog{
+        width: 90%;
+        margin-bottom: 30px;
+        
+    }
+    .Newsletter{
+        background-image: none;
+        width: 100%;
+    }
+    
+       
+    
+    form{
+        width: 95%;
+    }
+    
+ 
 }
 
 
